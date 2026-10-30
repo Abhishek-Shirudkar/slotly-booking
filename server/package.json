@@ -1,0 +1,9 @@
+{
+  "name": "slotly-server",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": { "start": "node index.js", "test": "node --test --test-force-exit" },
+  "engines": { "node": ">=18" },
+  "optionalDependencies": { "mongodb": "^6.9.0" }
+}
