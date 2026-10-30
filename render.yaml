@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: slotly-booking
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install --omit=dev
+    startCommand: node index.js
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false
